@@ -1,0 +1,5 @@
+#!ipxe
+
+kernel bzImage initrd=initramfs.cpio console=ttyS0,9600
+initrd initramfs.cpio
+boot

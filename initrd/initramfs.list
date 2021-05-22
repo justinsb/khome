@@ -1,0 +1,5 @@
+# Simple busybox based initramfs
+
+dir /dev 0755 0 0
+nod /dev/console 0600 0 0 c 5 1
+file /init .build/init 0755 0 0
